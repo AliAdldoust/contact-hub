@@ -1,0 +1,187 @@
+
+.nav {
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a {
+  display: block;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.nav button {
+  margin: 20px;
+}
+
+
+.container {
+
+  display: flex;
+}
+
+
+.sidebar{
+    border-right: 1px solid #e5e7eb;
+    padding: 30px;
+}
+
+
+.activeLink {
+  background-color: #eef2ff;
+  font-weight: 500;
+  color: #4338ca;
+}
+
+.main {
+
+  padding: 30px;
+  flex: 1;
+      
+  display: flex;
+  flex-direction: column;
+
+
+
+}
+
+.pageTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+
+
+.stats{
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: white;
+  padding: 1.5rem;
+
+}
+
+
+
+.search {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 0.625rem 1rem;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+.sectionHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: white;
+  padding: 1.5rem;
+
+
+
+  margin: 30px 0;
+
+}
+
+
+.addButton{
+
+
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+}
+
+
+.table{
+
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 30px;
+
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: white;
+
+
+}
+
+
+
+
+.tableRow{
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: white;
+
+
+}
+
+
+
+.tableCell, .tableHead th{
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+  color: #4b5563;
+  white-space: nowrap;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #0003;
+}
+
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px; 
+
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
