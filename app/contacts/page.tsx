@@ -52,6 +52,7 @@ export default function ContactsPage() {
       const {data, error} = await supabase
       .from("contacts")
       .insert({
+      id: Date.now(),
       name: newContact.name,
       email: newContact.email,
       phone: newContact.phone,

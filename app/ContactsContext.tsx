@@ -17,9 +17,11 @@ type ContactsContextType = {
   setContacts: React.Dispatch<React.SetStateAction<Contact[]>>;
 };
 
-const ContactsContext = createContext<ContactsContextType | undefined>(
-  undefined
-);
+
+const ContactsContext = createContext<{
+  contacts: Contact[];
+  setContacts: React.Dispatch<React.SetStateAction<Contact[]>>;
+} | null>(null);
 
 export function ContactsProvider({
   children,

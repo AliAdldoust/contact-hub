@@ -44,7 +44,7 @@ type StatCardProps = {
   description: string;
 };
 
-function StatCard({ title, value, description }: StatCardProps) {
+function StatCard({ value, description }: StatCardProps) {
   return (
     <div className={styles.statCard}>
       <p className={styles.statValue}>{value}</p>

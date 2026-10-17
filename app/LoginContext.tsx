@@ -31,6 +31,9 @@ export function LoginProvider({
 
 export function useLogin() {
   const context = useContext(LoginContext);
+  if (context === null) {
+    throw new Error("useLogin must be used inside LoginProvider");
+  }
   return context;
   
 }
