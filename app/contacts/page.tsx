@@ -59,7 +59,6 @@ export default function ContactsPage() {
       const {data, error} = await supabase
       .from("contacts")
       .insert({
-      id: contacts.length + 1,
       name: newContact.name,
       email: newContact.email,
       phone: newContact.phone,
@@ -167,7 +166,7 @@ export default function ContactsPage() {
                                     onClick={() => setIsModalOpen(false)}>
                               Close 
                             </button>
-                            <button className={styles.addButton} type="submit">
+                            <button className={styles.addButton} type="submit" onClick={() => handleSaveContact}>
                               Save 
                             </button>
                         </div>
