@@ -38,7 +38,7 @@ export default function ContactsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
 
-  const [newContact, setNewContact] = useState({name:"", email:"", phone:""})
+  const [newContact, setNewContact] = useState({id:1, name:"", email:"", phone:""})
 
 
 
@@ -47,12 +47,19 @@ export default function ContactsPage() {
 
       event.preventDefault();
 
-      setContacts((contacts) => [...contacts, newContact]);
+        const contactToAdd = {
+          id: contacts.length + 1,
+          name: newContact.name,
+          email: newContact.email,
+          phone: newContact.phone,
+        };
+
+      setContacts((contacts) => [...contacts, contactToAdd]);
 
       const {data, error} = await supabase
       .from("contacts")
       .insert({
-      id: Date.now(),
+      id: contacts.length + 1,
       name: newContact.name,
       email: newContact.email,
       phone: newContact.phone,

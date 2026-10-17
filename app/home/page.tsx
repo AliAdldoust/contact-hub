@@ -39,7 +39,6 @@ export default function Home() {
 }
 
 type StatCardProps = {
-  title: string;
   value: number;
   description: string;
 };
