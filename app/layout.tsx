@@ -28,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className={styles.container}>
         <LoginProvider>
             <ContactsProvider>
-                <Sidebar>{children}</Sidebar>
+                <Sidebar />
                 <main className={styles.main}>{children}</main>
           </ContactsProvider>
         </LoginProvider>
