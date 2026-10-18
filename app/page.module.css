@@ -1,7 +1,6 @@
 
 .nav {
 
-
   display: flex;
   flex-direction: column;
 }
@@ -34,6 +33,7 @@
   background-color: #eef2ff;
   font-weight: 500;
   color: #4338ca;
+  padding-left: 0px;
 }
 
 .main {
@@ -163,8 +163,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 400px;
+  width: 50vw;
+  height: 50vh;
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -184,4 +184,41 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  
+    .sectionHeader{
+      display: block;
+
+}
+
+    .container {
+
+      flex-direction: column;
+    }
+
+    .nav {
+      flex-direction: row;
+    }
+
+    .activeLink {
+      flex:1; 
+
+    }
+    
+    .link {
+      flex:1; 
+
+    }
+
+
+
+
+
 }

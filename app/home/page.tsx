@@ -3,8 +3,6 @@
 import styles from "../page.module.css";
 
 
-import {useState} from 'react'
-
 import { useContacts } from "../ContactsContext";
 
 
